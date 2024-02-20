@@ -8,3 +8,16 @@ line-height: 1.11;
 letter-spacing: 0.02;
 text-transform: capitalize;
 }
+
+.hero-title::before {
+  width: 100px;
+  height: 2px;
+  background-color: #fff;  
+}
+
+
+.hero-title::after {
+  width: 100px;
+  height: 2px;
+  background-color: #fff;  
+}
