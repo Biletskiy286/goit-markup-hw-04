@@ -115,6 +115,7 @@ p {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-item:hover,
 .address-item:focus {
@@ -163,6 +164,7 @@ p {
   cursor: pointer;
   min-width: 169px;
   height: 56px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-one-section:hover,
 .button-one-section:focus {
@@ -203,6 +205,9 @@ p {
 }
 
 .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 112px;
   background-color: #f4f4fd;
@@ -262,6 +267,7 @@ p {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 48px) / 3);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .worker-info {
@@ -297,7 +303,15 @@ p {
 
 .s-four-list-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.s-four-list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+  transform: translateY(0%);
+}
+
 .section-four-title {
   font-size: 36px;
   line-height: 1.11;
@@ -330,6 +344,27 @@ p {
   color: #434455;
 }
 
+.im-app {
+  position: relative; 
+  overflow: hidden;
+  width: 360px;
+  height: 300px;
+  background-color: #4D5AE5;
+}
+.section-four-pp {
+display: flex;
+position: absolute;
+top: 0;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color:var(--CLOUD, #f4f4fd);
+padding: 40px 32px;
+height: 100%;
+width: 100%; 
+transform: translateY(100%); 
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 /* FOOTER */
 
 .footer {
@@ -380,10 +415,8 @@ p {
   border-radius: 50%;
 }
 .icon-icon {
-  fill: #e7e9fc;
-  eight: 16px;
-  width: 16px;
-}
+  fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .social {
   width: 208px;
