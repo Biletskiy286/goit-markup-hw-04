@@ -28,11 +28,13 @@ h6,
 p {
   margin: 0;
 }
+
 .container {
   width: 1158px;
   padding: 0 15px 0 15px;
   margin: auto;
 }
+
 .container-header {
   display: flex;
 }
@@ -41,7 +43,7 @@ p {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+  }
 .navigation {
   display: flex;
   align-items: center;
@@ -135,7 +137,7 @@ p {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office1.jpg);
-  max-width: 1440px;
+  width: 1158px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -181,9 +183,9 @@ p {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.container-two {
+/* .container-two {
   display: flex;
-}
+} */
 
 .section-two-list {
   display: flex;
