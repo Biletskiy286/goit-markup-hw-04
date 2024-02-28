@@ -464,6 +464,12 @@ p {
   margin-top: 8px;
 }
 
+.icon-list-item-footer {
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
+}
+
 .icon-list-item-footer :hover,
 .icon-list-item-footer :focus {
   background-color: #31d0aa;
@@ -481,6 +487,8 @@ p {
 
 .icon-icon-footer {
   fill: #f4f4fd;
+  width: 24px;
+  height: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social {
