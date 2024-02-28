@@ -391,24 +391,25 @@ p {
 }
 
 .overlay {
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #4d5ae5;
+  color: var(--CLOUD, #f4f4fd);
+  padding: 40px 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  overflow: auto;
   letter-spacing: 0.02em;
-  color: var(--CLOUD, #f4f4fd);
-  background-color: #4d5ae5;
-  padding: 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.im-app:hover .overlay {
+.im-app:hover .overlay,
+.im-app:focus .overlay {
   transform: translateY(0%);
 }
 
@@ -418,20 +419,15 @@ p {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
-  display: flex;
-  margin: auto;
-  max-width: 1440px;
-  align-items: baseline;
-  justify-self: center;
 }
 
 .footer-container {
-  display: block;
+  display: flex;
   align-items: baseline;
-  margin-right: 120px;
-  margin-left: 156px;
+  /* margin-right: 120px; */
+  /* margin-left: 156px; */
   /* padding-left: 156px; */
-  width: 264px;
+  /* width: 264px; */
 }
 
 .logo-blu-footer {
@@ -481,6 +477,7 @@ p {
 .social {
   width: 208px;
   display: block;
+  align-items: baseline;
   /* margin: auto; */
   margin-left: 0;
 }
