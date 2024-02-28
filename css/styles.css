@@ -419,13 +419,19 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
+  margin: auto;
+  max-width: 1440px;
   align-items: baseline;
+  justify-self: center;
 }
 
 .footer-container {
-  display: flex;
+  display: block;
   align-items: baseline;
   margin-right: 120px;
+  margin-left: 156px;
+  /* padding-left: 156px; */
+  width: 264px;
 }
 
 .logo-blu-footer {
@@ -475,7 +481,8 @@ p {
 .social {
   width: 208px;
   display: block;
-  margin: auto;
+  /* margin: auto; */
+  margin-left: 0;
 }
 
 .social-text {
